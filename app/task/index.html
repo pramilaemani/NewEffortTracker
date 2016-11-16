@@ -1,0 +1,69 @@
+<h1>Create Task</h1>
+    <table id="task-form">
+    <tr>
+    	<td width="200px" class="taskinput">Project </td>
+        <td><select>
+              <option value="SAP AMS">AMS</option>
+              <option value="SIMPL">SIMPL</option>
+              <option value="eVRM">eVRM</option>
+              <option value="Connected Vehicles">Connected Vehicles</option>
+            </select>
+        </td>
+        <td width="50px">&nbsp;&nbsp;</td>
+    	<td width="170px" class="taskinput">AssignedTo </td><td>&nbsp;&nbsp;</td>
+        <td><select>
+              <option value="Abhishek S.">Abhishek S.</option>
+              <option value="Manjunath K.">Manjunath K.</option>
+              <option value="Rajesh J.">Rajesh J.</option>
+              <option value="Harika N.">Harika N.</option>
+              <option value="Sujatha V.">Sujatha V.</option>
+              <option value="Nandakishore K.">Nandakishore K.</option>
+              <option value="Amulya A.">Amulya A.</option>
+            </select>
+        </td>
+    </tr>   
+    <tr>
+    	<td width="200px"  class="taskinput">Task Name </td><td><input type="" name=""></td><td>&nbsp;&nbsp;</td>
+    	<td width="170px" class="taskinput">Task Status </td><td>&nbsp;&nbsp;</td>
+        <td><select>
+              <option value="New">New</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Sent for QA Approval">Sent for QA Approval</option>
+              <option value="QA Approved">QA Approved</option>
+              <option value="Pending">Pending</option>
+              <option value="Completed">Completed</option>
+            </select>
+        </td>
+    </tr>    
+    <tr>
+		<td  width="200px"  class="taskinput">Estimated Start Date</td><td><input type="date"></td> <td>&nbsp;&nbsp;</td>  	
+		<td width="170px" class="taskinput">Estimated End Date </td><td>&nbsp;&nbsp;</td><td><input type="date"></td>
+    </tr>
+    
+    <tr>
+    	<td width="200px"  class="taskinput">Actual Start Date </td><td><input type="date"></td><td>&nbsp;&nbsp;</td>
+    	<td width="170px" class="taskinput">Actual End Date </td><td>&nbsp;&nbsp;</td><td><input type="date"></td>
+    </tr>   
+    <tr>
+    	<td width="200px"  class="taskinput">Estimated Effort</td><td><input type="" name=""></td> <td>&nbsp;&nbsp;</td>
+     	<td width="170px" class="taskinput">Actual Effort </td><td>&nbsp;&nbsp;</td><td><input type="" name=""></td>
+    </tr>
+    <tr>
+        <td width="200px"  class="taskinput">Story Point</td>
+            <td>
+                <select>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+                  <option value="8">8</option>
+                  <option value="13">13</option>
+                  <option value="21">21</option>
+                </select>
+            </td> <td>&nbsp;&nbsp;</td>
+        
+    </tr>    
+    </table>
+    <br><br>    
+    <button class="btn btn-primary" ng-click="vm.createTask()">Create Task</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-primary" ng-click="vm.updateTask()">Update Task</button>    

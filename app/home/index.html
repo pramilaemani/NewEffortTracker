@@ -1,0 +1,38 @@
+﻿<h1>Hi {{vm.user.firstName}}!!</h1>
+
+<h3>List of Tasks For Team: &nbsp;
+
+<select>
+    <option value="SAP AMS">AMS</option>
+    <option value="SIMPL">SIMPL</option>
+    <option value="eVRM">eVRM</option>
+    <option value="Connected Vehicles">Connected Vehicles</option>
+</select>
+</h3>
+
+<table id="taskTable">
+	<tr>
+		<td>Project</td>
+		<td>Resource</td>
+		<td>TaskName</td>
+		<td>TaskStatus</td>
+		<td>Estimated Start Date</td>
+		<td>Estimated End Date</td>
+		<td>Actual Start Date</td>
+		<td>Actual End Date</td>
+		<td>Estimated Effort</td>
+		<td>Actual Effort</td>
+	</tr>
+	<tr ng-repeat = "task in vm.tasks">
+		<td>{{task.Project}}</td>
+		<td>{{task.Resource}}</td>
+		<td>{{task.TaskName}}</td>
+		<td>{{task.TaskStatus}}</td>
+		<td>{{task.EstimatedStartDate}}</td>
+		<td>{{task.EstimatedEndDate}}</td>
+		<td>{{task.ActualStartDate}}</td>
+		<td>{{task.ActualEndDate}}</td>
+		<td>{{task.EstimatedEffort}}</td>
+		<td>{{task.ActualEffort}}</td>
+	</tr>
+</table>

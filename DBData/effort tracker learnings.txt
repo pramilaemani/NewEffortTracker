@@ -1,0 +1,14 @@
+command to import JSON array into MongoDB
+
+
+C:\mongodb\bin>mongoimport --host localhost:27017 --db trackerAppDB --collection tasks --jsonArray C:\ProjectTracker-master\ProjectTracker-master\test.json
+
+
+
+mongoimport --host localhost:27017 --db trackerAppDB --collection projects --jsonArray C:\EffortTracker\DBData\projects.json
+
+mongoimport --host localhost:27017 --db trackerAppDB --collection users --jsonArray C:\EffortTracker\DBData\users.json
+
+mongoimport --host localhost:27017 --db trackerAppDB --collection tasks --jsonArray C:\EffortTracker\DBData\tasks.json
+
+mongoimport --host localhost:27017 --db trackerAppDB --collection taskStatuses --jsonArray C:\EffortTracker\DBData\status.json
